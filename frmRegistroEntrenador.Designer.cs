@@ -235,6 +235,7 @@
             this.Controls.Add(this.lblCodigoDeportista);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistroEntrenador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Entrenador";
             this.Load += new System.EventHandler(this.frmRegistroEntrenador_Load);
             this.ResumeLayout(false);

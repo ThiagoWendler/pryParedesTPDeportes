@@ -161,6 +161,7 @@
             this.Controls.Add(this.lblConsultaEntrenador);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaEntrenador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de Entrenador";
             this.Load += new System.EventHandler(this.frmConsultaEntrenador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaEntrenadores)).EndInit();

@@ -63,12 +63,12 @@ namespace pryParedesTPDeportes
 
                 ComandosDeLaBD = new OleDbCommand();
 
-                ComandosDeLaBD.Connection = ConexionDeLaBD;
-                ComandosDeLaBD.CommandType = CommandType.Text;
+                ComandosDeLaBD.Connection = ConexionDeLaBD; //Es la conexion a un origen de datos
+                ComandosDeLaBD.CommandType = CommandType.Text; //Se usa para almacenar los datos
                 ComandosDeLaBD.CommandText = "INSERT INTO" + " ENTRENADORES ([NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [EDAD], [DEPORTE])" +
                     " VALUES ('" + txtNombre.Text + "','" + txtApellido.Text + "','" + txtDireccion.Text + "','" + txtTelefono.Text + "','" + txtEdad.Text + "','" + lstDeporte.SelectedItem + "')";
 
-                ComandosDeLaBD.ExecuteNonQuery();
+                ComandosDeLaBD.ExecuteNonQuery(); //Son las filas afectadas
                 MessageBox.Show("Los datos fueron almacenados con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)
@@ -80,6 +80,7 @@ namespace pryParedesTPDeportes
 
         private void txtCodigoDeportista_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Comprueba y no permite al usuario escribir un dato incorrecto, se basa en la tabla ASCII
             if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
             {
                 e.Handled = true;
@@ -88,6 +89,7 @@ namespace pryParedesTPDeportes
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Comprueba y no permite al usuario escribir un dato incorrecto, se basa en la tabla ASCII
             if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
             {
                 e.Handled = true;
@@ -101,6 +103,7 @@ namespace pryParedesTPDeportes
 
         private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Comprueba y no permite al usuario escribir un dato incorrecto, se basa en la tabla ASCII
             if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
             {
                 e.Handled = true;
@@ -109,6 +112,7 @@ namespace pryParedesTPDeportes
 
         private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Comprueba y no permite al usuario escribir un dato incorrecto, se basa en la tabla ASCII
             if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
             {
                 e.Handled = true;
@@ -117,6 +121,7 @@ namespace pryParedesTPDeportes
 
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Comprueba y no permite al usuario escribir un dato incorrecto, se basa en la tabla ASCII
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
                 
@@ -127,6 +132,7 @@ namespace pryParedesTPDeportes
 
         private void txtEdad_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Comprueba y no permite al usuario escribir un dato incorrecto, se basa en la tabla ASCII
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
                 
