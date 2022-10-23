@@ -68,12 +68,13 @@ namespace pryParedesTPDeportes
                 ComandosDeLaBD.CommandText = "INSERT INTO" + " ENTRENADORES ([CODIGO DEPORTISTA], [NOMBRE], [APELLIDO], [DIRECCION], [PROVINCIA], [DEPORTE])" +
                     " VALUES ('" + txtCodigoDeportista.Text + "','" + txtNombre.Text + "','" + txtApellido.Text + "','" + txtDireccion.Text + "','" + txtProvincia.Text + "','" + lstDeporte.SelectedItem + "')";
 
+                
                 ComandosDeLaBD.ExecuteNonQuery();
-                MessageBox.Show("Datos almacenados con exito");
+                MessageBox.Show("Los datos fueron almacenados con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ErrorDeDatos)
             {
-                MessageBox.Show("No se pudieron almacenar los datos");
+                MessageBox.Show("No fue posible guardar los datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             ConexionDeLaBD.Close();
         }
