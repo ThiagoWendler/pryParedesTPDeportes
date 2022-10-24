@@ -40,6 +40,7 @@
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Deporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaDeportista)).BeginInit();
             this.SuspendLayout();
@@ -95,10 +96,11 @@
             this.Apellido,
             this.Direccion,
             this.Telefono,
+            this.Edad,
             this.Deporte});
             this.dgvConsultaDeportista.Location = new System.Drawing.Point(12, 32);
             this.dgvConsultaDeportista.Name = "dgvConsultaDeportista";
-            this.dgvConsultaDeportista.Size = new System.Drawing.Size(643, 150);
+            this.dgvConsultaDeportista.Size = new System.Drawing.Size(649, 150);
             this.dgvConsultaDeportista.TabIndex = 67;
             // 
             // lblConsultaDeportista
@@ -141,11 +143,16 @@
             this.Telefono.Name = "Telefono";
             this.Telefono.ReadOnly = true;
             // 
+            // Edad
+            // 
+            this.Edad.HeaderText = "Edad";
+            this.Edad.Name = "Edad";
+            this.Edad.ReadOnly = true;
+            // 
             // Deporte
             // 
-            this.Deporte.HeaderText = "Edad";
+            this.Deporte.HeaderText = "Deporte";
             this.Deporte.Name = "Deporte";
-            this.Deporte.ReadOnly = true;
             // 
             // frmConsultaDeportista
             // 
@@ -182,6 +189,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Deporte;
     }
 }
