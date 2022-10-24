@@ -52,14 +52,14 @@
             this.lstDeporte.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstDeporte.FormattingEnabled = true;
             this.lstDeporte.Items.AddRange(new object[] {
-            "TENIS",
-            "BASQUET",
-            "CICLISMO",
-            "FUTBOL",
-            "RUGBY",
-            "ATLETISMO",
-            "PADEL",
-            "HANDBALL"});
+            "Tenis",
+            "Ciclismo",
+            "Basquet",
+            "Futbol",
+            "Rugby",
+            "Atletismo",
+            "Handball",
+            "Padel"});
             this.lstDeporte.Location = new System.Drawing.Point(149, 165);
             this.lstDeporte.Name = "lstDeporte";
             this.lstDeporte.Size = new System.Drawing.Size(100, 21);
